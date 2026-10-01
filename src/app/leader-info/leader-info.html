@@ -1,0 +1,36 @@
+<article class="leader-card">
+  <header class="leader-header">
+    <img src="{{ photo() }}" alt="{{ name() }}">
+    <h3>{{ name() }}</h3>
+  </header>
+
+  <dl class="leader-details">
+    <dt class="badge-pill">🏅 {{ badge() }}</dt>
+
+    @if (age()) {
+      <dt>Age</dt>
+      <dd>{{ age() }}</dd>
+    }
+
+    @if (specialty()) {
+      <dt>Specialty</dt>
+      <dd>{{ specialty() }}</dd>
+    }
+
+    <dt>Location</dt>
+    <dd>📍 {{ location() }}</dd>
+
+    <dt>Pokémon Team</dt>
+    <dd>{{ pokemonTeam() }}</dd>
+  </dl>
+
+  @if (monologue()) {
+    <button class="monologue-btn" type="button" (click)="toggleMonologue()">
+      {{ showMonologue() ? 'Hide Motto' : 'Show Motto' }}
+    </button>
+
+    @if (showMonologue()) {
+      <p class="monologue">{{ monologue() }}</p>
+    }
+  }
+</article>

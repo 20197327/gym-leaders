@@ -1,0 +1,51 @@
+.home {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem 1.5rem;
+  text-align: center;
+}
+
+.home h2 {
+  margin-bottom: 0.5rem;
+}
+
+.intro {
+  color: #555;
+  margin-bottom: 1.5rem;
+}
+
+.region-history {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1rem;
+  text-align: left;
+}
+
+.history-card {
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 1.25rem;
+  background: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
+}
+
+.history-card h3 {
+  margin-top: 0;
+}
+
+.history-card.kanto h3 {
+  color: #c0392b;
+}
+
+.history-card.johto h3 {
+  color: #1e6091;
+}
+.history-card.hoenn h3 {
+  color: #e2e61c;
+}
+
+.cta {
+  margin-top: 1.75rem;
+  color: #777;
+  font-size: 0.9rem;
+}

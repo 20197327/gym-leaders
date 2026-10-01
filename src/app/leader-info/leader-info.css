@@ -1,0 +1,73 @@
+.leader-card {
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 1.25rem;
+  background: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
+}
+
+.leader-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+}
+
+.leader-header h3 {
+  align-items: left;
+  font-size: 1.25rem;
+}
+
+.badge-pill {
+  background: #ffcb05;
+  color: #222;
+  border-radius: 999px;
+  padding: 0.2rem 0.6rem;
+  font-size: 0.8rem;
+  font-weight: bold;
+  white-space: nowrap;
+}
+
+.leader-details {
+  margin: 0.75rem 0;
+}
+
+.leader-details dt {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  color: #888;
+  margin-top: 0.5rem;
+}
+
+.leader-details dd {
+  margin: 0.1rem 0 0 0;
+  font-size: 0.95rem;
+  color: #222;
+}
+
+.monologue-btn {
+  margin-top: 0.5rem;
+  border: none;
+  border-radius: 6px;
+  background: #2d6cdf;
+  color: white;
+  padding: 0.5rem 0.9rem;
+  font-size: 0.85rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.monologue-btn:hover {
+  background: #1f52ad;
+}
+
+.monologue {
+  margin-top: 0.75rem;
+  padding-top: 0.6rem;
+  border-top: 1px solid #eee;
+  font-size: 0.9rem;
+  font-style: italic;
+  line-height: 1.4;
+  color: #444;
+}

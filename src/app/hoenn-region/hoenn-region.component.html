@@ -1,0 +1,14 @@
+<section class="region-section hoenn">
+  <h2>Hoenn Region Gym Leaders</h2>
+  <div class="card-grid">
+    @for (trainer of trainerService.trainers(); track trainer.name) {
+      <app-leader-info
+        [photo]="trainer.photo"
+        [name]="trainer.name"
+        [badge]="trainer.badge"
+        [location]="trainer.town"
+        [pokemonTeam]="trainer.team"
+        [specialty]="trainer.specialty" />
+    }
+  </div>
+</section>

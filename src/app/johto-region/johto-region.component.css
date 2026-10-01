@@ -1,0 +1,20 @@
+.region-section {
+  padding: 2rem;
+}
+
+.region-section h2 {
+  text-align: center;
+  margin-bottom: 1.25rem;
+}
+
+.johto h2 {
+  color: #1e6091;
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1rem;
+  max-width: 1100px;
+  margin: 0 auto;
+}

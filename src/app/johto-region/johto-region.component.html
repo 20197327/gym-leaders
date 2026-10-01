@@ -1,0 +1,16 @@
+<section class="region-section johto">
+  <h2>Johto Region Gym Leaders</h2>
+  <div class="card-grid">
+    @for (leader of leaders; track leader.name) {
+      <app-leader-info
+        [photo] = "leader.photo"
+        [name]="leader.name"
+        [age]="leader.age"
+        [location]="leader.location"
+        [pokemonTeam]="leader.pokemonTeam"
+        [badge]="leader.badge"
+        [monologue]="leader.monologue"
+      />
+    }
+  </div>
+</section>
